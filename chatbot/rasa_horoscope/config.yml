@@ -1,0 +1,34 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+#Pipeline ["supervised_embeddings","spacy_sklearn","pretrained_embeddings_spacy", ]
+language: en
+#pipeline: pretrained_embeddings_spacy
+#pipeline:
+#  - name: "WhitespaceTokenizer"
+#  - name: "RegexFeaturizer"
+#  - name: "CRFEntityExtractor"
+#  - name: "EntitySynonymMapper"
+#  - name: "CountVectorsFeaturizer"
+#    analyzer: "char_wb"
+#    mix_ngram: 1
+#    max_ngram: 4
+#  - name: "EmbeddingIntentClassifier"
+#  - name: "ner_synonyms"
+
+pipeline:
+  - name: "SpacyNLP"
+  - name: "SpacyTokenizer"
+  - name: "SpacyFeaturizer"
+  - name: "RegexFeaturizer"
+  - name: "autocorrect_entity.AutocorrectNouns"
+  - name: "CRFEntityExtractor"
+  - name: "SpacyEntityExtractor"
+  - name: "EntitySynonymMapper"
+  - name: "SklearnIntentClassifier"
+
+
+policies:  
+  - name: KerasPolicy 
+  - name: MappingPolicy
+  - name: MemoizationPolicy
+    max_history: 10

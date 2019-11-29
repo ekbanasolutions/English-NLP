@@ -1,0 +1,48 @@
+actions:
+- action_suscription
+- action_horoscope
+- action_fetch_horoscope
+- utter_ask_date
+- utter_default
+- utter_did_that_help
+- utter_give_horoscope
+- utter_goodbye
+- utter_gratitude
+- utter_greet
+- utter_help
+- utter_sorry
+entities:
+- horoscopelist
+- birthdate
+- autocorrect_nouns_horoscopelist
+- email
+
+intents:
+- greet
+- jibber_jabber
+- ask_horoscope
+- bye 
+- thankyou
+- affirm
+- deny
+- birth_date
+- help_me
+- subscription
+- email
+
+slots:
+  horoscopelist:
+    type: text
+  birthdate:
+    type: text
+  autocorrect_nouns_horoscopelist:
+    type: text
+  email:
+    type: text
+  suscription:
+    type: bool
+templates:
+  utter_ask_date:
+  - text: Tell me your birthdate as MM/YY
+  utter_default:
+  - text: I am sorry, I didn't get that. Could you please repeat your query?
