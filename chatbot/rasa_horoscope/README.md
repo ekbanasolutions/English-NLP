@@ -48,4 +48,4 @@ rasa run actions & rasa shell
 
 EXAMPLE SAMPLE
 
-![]out.mp4
+![] (out.mp4)
