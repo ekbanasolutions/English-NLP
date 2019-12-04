@@ -48,4 +48,4 @@ rasa run actions & rasa shell
 
 EXAMPLE SAMPLE
 
-[link text] (https://github.com/ekbanasolutions/English-NLP/blob/master/chatbot/rasa_horoscope/images/out.mp4)
+[![link text](https://github.com/ekbanasolutions/English-NLP/blob/master/chatbot/rasa_horoscope/images/out.png)] (https://github.com/ekbanasolutions/English-NLP/blob/master/chatbot/rasa_horoscope/images/out.mp4)
