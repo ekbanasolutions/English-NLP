@@ -48,4 +48,4 @@ rasa run actions & rasa shell
 
 EXAMPLE SAMPLE
 
-![] (images/out.mp4)
+![] (https://github.com/ekbanasolutions/English-NLP/tree/master/chatbot/rasa_horoscope/images)
