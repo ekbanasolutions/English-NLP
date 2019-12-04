@@ -44,3 +44,8 @@ rasa train
 rasa run actions & rasa shell
 
 ```
+
+
+EXAMPLE SAMPLE
+
+![]out.mp4
